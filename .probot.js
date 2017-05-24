@@ -1,4 +1,7 @@
 on('issues.labeled')
+  .comment('Test test 123')
+
+on('issues.labeled')
   .filter(event => event.payload.issue.labels.find(label => label.name === 'Usage Question'))
   .comment(autoreply('usage_question'))
   .close()
