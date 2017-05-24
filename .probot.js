@@ -1,10 +1,10 @@
 on('issues.labeled')
-  .filter(event => event.payload.label.name === 'Usage Question')
+  .filter(event => event.payload.issue.labels.find(label => label.name === 'Usage Question'))
   .comment(autoreply('usage_question'))
   .close()
 
 on('issues.labeled')
-  .filter(event => event.payload.label.name === 'Needs Test Case')
+  .filter(event => event.payload.issue.labels.find(label => label.name === 'Needs Test Case'))
   .comment(autoreply('needs_test_case'))
 
 function autoreply(name) {
