@@ -1,0 +1,1 @@
+Hi, please provide a test case as per our [contributing guidelines](https://github.com/Semantic-Org/Semantic-UI/blob/master/CONTRIBUTING.md); you can fork [this JSFiddle](http://jsfiddle.net/efp8z6Ln).
